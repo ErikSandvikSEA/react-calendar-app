@@ -44,11 +44,11 @@ function Calendar() {
   return (
     <Frame>
       <Header>
-        <Button onClick={()=> setDate(new Date(year, month - 1, day))}>Previous Day</Button>
+        <Button onClick={()=> setDate(new Date(year, month - 1, day))}>Previous Month</Button>
         <div>
           {months[month]} {year}
         </div>
-        <Button onClick={()=> setDate(new Date(year, month+1, day))}>Next Day</Button>
+        <Button onClick={()=> setDate(new Date(year, month+1, day))}>Next Month</Button>
       </Header>
       <Body>
         {weekDays.map(d => (
